@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'dev' }
+    agent { label 'ec2' }
     environment {
         IMAGE_NAME = "notes_app"
         IMAGE_TAG = "${env.BUILD_NUMBER}"
