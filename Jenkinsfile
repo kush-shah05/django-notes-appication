@@ -36,7 +36,7 @@ pipeline {
 
         stage("deploy") {
             steps {
-                echo "Deploying container from DockerHub image..."
+                echo "Deploying container from DockerHub image...."
                 withCredentials([usernamePassword(
                     credentialsId: "dockerhubCred",
                     usernameVariable: "dockerHubUser",
