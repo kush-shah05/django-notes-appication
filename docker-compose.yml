@@ -14,8 +14,6 @@ services:
       - notes-app-nw
 
   django_app:
-    build:
-      context: .
     image: "kushshah05/notes_app:latest"
     container_name: "django_cont"
     ports:
