@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage("code") {
             steps {
-                echo "Cloning repository...."
+                echo "Cloning repository....."
                 git url: "https://github.com/kush-shah05/django-notes-appication.git", branch: "main"
             }
         }
